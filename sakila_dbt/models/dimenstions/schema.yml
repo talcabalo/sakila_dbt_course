@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_key
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_customer
+    columns:
+        - name: customer_id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
+
+
+  - name: dim_store
+    columns:
+        - name: store_id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
+
+
+  - name: dim_staff
+    columns:
+        - name: staff_id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
+
+
+  - name: dim_film
+    columns:
+        - name: film_id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null       

@@ -1,0 +1,21 @@
+version: 2
+
+facts:
+  - name: fact_rental
+    description: "fact_rental"
+    columns:
+      - name: rental_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+  - name: fact_payment
+    description: "fact_payment"
+    columns:
+      - name: payment_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
